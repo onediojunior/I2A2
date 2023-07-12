@@ -1,0 +1,77 @@
+Imagem (Utilizado o Fotor - https://www.fotor.com/features/ai-image-generator/)
+
+Create an image for S Technology, specialized in computer products, with the standard color navy blue. The image should feature the letter "S" in the center, surrounded by a square with rounded corners, with a neon effect.
+
+Requirements:
+- Standard color: Navy blue (#000080)
+- Central letter: "S"
+- External shape: Square with rounded corners
+- Effect: Neon
+
+Remember that you can adjust the dimensions, contour thickness, and intensity of the neon effect to create a visually appealing image that represents the company well.
+
+Gerar página login.html:
+Crie um código HTML que exiba um formulário de login com os seguintes elementos:
+
+- Um formulário com a classe "login-form".
+- Um título com a classe "login-form-title" exibindo o texto "Faça o login".
+- Dois campos de entrada de texto:
+    - Um campo de entrada de texto para o email com a classe "input-form" e o atributo name definido como "email".
+    - Um campo de entrada de texto para a senha com a classe "input-form" e o atributo name definido como "password".
+- Para cada campo de entrada de texto, adicione um elemento `<span>` com a classe "focus-input-form" e o atributo data-placeholder definido como o nome do campo ("E-mail" para o campo de email e "Senha" para o campo de senha).
+- Um botão com a classe "login-form-btn" e o texto "Login".
+- Uma lista não ordenada (ul) com a classe "login-utils" contendo dois itens da lista (li):
+    - O primeiro item da lista deve conter um elemento `<span>` com a classe "text1" exibindo o texto "Esqueceu sua" e um link (esqueceu.html) com a classe "text2" exibindo o texto "senha?".
+    - O segundo item da lista deve conter um elemento `<span>` com a classe "text1" exibindo o texto "Não tem conta?" e um link (criar.html) com a classe "text2" exibindo o texto "Criar".
+- Uma imagem com o atributo src definido como "images/s_icon.jpg", a largura definida como 300 e a altura definida como 300, e a classe "margin-left-50".
+- Um arquivo CSS externo com o caminho "css/main.css" deve ser vinculado ao documento HTML.
+- Um script JavaScript que selecione todos os elementos com a classe "input-form" e adicione um ouvinte de evento "blur" a cada um deles. O ouvinte de evento deve verificar se o valor do campo está vazio. Se estiver vazio, ele deve remover a classe "has-val" do campo; caso contrário, deve adicionar a classe "has-val" ao campo. E ao pressionar o botão "login" a página será direcionada a página produtos.html, caso o campo "E-mail" e o campo "Senha" não estejam vazios.
+Lembre-se de incluir as tags HTML adequadas para estruturar corretamente o documento.
+
+
+Gerar código CSS:
+Crie um código CSS que estilize um formulário de login com os seguintes estilos:
+
+- Defina as variáveis CSS para cores, como --main-color, --link-color, --text1, --highlight-text, --input-text, --white-color, --point-list e --line-input, com seus respectivos valores.
+- Importe as fontes personalizadas Poppins-Regular, Poppins-Medium, Poppins-Bold e Poppins-SemiBold, definindo o caminho correto para os arquivos de fonte.
+- Zere os estilos padrão de margem, preenchimento e caixa-modelo para todos os elementos HTML.
+- Defina a altura do corpo (body) e do elemento HTML (html) como 100% e defina a fonte padrão para Poppins-Regular e sans-serif.
+- Remova a estilização de lista (marcadores) e margens para as listas não ordenadas (ul) e seus itens (li).
+- Remova o contorno padrão e a borda para inputs e botões.
+- Ao passar o mouse sobre um botão, altere o cursor para pointer.
+- Defina estilos para elementos utilitários, como .text1, .text2, .margin-bottom-35, .margin-top-35, .margin-bottom-8, .margin-top-8 e .margin-left-50.
+- Defina estilos para a área de login, como .container, .container-login e .wrap-login.
+- Defina estilos para o formulário, como .login-form e .login-form-title.
+- Defina estilos para campos de entrada (inputs), como .wrap-input, .input-form e .focus-input-form.
+- Defina estilos para botões, como .container-login-form-btn e .login-form-btn.
+- Defina estilos para links (a), como .text1, .text2 e .login-utils.
+- Defina estilos para a lista de itens de login (ul) e seus itens (li), como .login-utils e .login-utils li.
+
+
+Página produtos.html
+Crie um código HTML com CSS interno que exiba uma lista de produtos. O código deve conter as seguintes características:
+
+- O título da página deve ser "Produtos".
+- Defina um estilo CSS interno no cabeçalho (head) para ajustar o alinhamento do texto para o centro e definir o tamanho da fonte e a altura da linha.
+- Inclua um título de nível 1 (h1) com o texto "PRODUTOS" abaixo do cabeçalho.
+- Crie uma div com a classe "container" para envolver os elementos dos produtos.
+- Dentro da div "container", crie várias divs com a classe "box" para cada produto.
+- Para cada div "box", adicione uma imagem com o atributo src definido como o caminho para a imagem do produto e um atributo alt descrevendo a imagem.
+- Abaixo da imagem, adicione um parágrafo (p) com o texto "ID: X", onde X é o número do ID do produto.
+- Abaixo do parágrafo do ID, adicione outro parágrafo com o texto "Descrição: Descrição do produto X", onde X é o número do ID do produto.
+- Aplique estilos CSS internos para definir a largura e margem inferior das divs "box", adicionar uma borda sólida e um preenchimento interno, além de alinhar o texto centralmente.
+- Defina um estilo CSS interno para as imagens dentro das divs "box" para ajustar a largura e altura das imagens e adicionar uma margem inferior.
+- Não se esqueça de fechar as tags corretamente para garantir que o código HTML seja válido.
+
+Gerar página esqueceu.html:
+Crie um código HTML que exiba um formulário de login com os seguintes elementos:
+
+- Um formulário com a classe "login-form".
+- Um título com a classe "login-form-title" exibindo o texto "Esqueceu a sua senha".
+- Um campo de entrada de texto:
+    - Um campo de entrada de texto para o email com a classe "input-form" e o atributo name definido como "email".
+- Para cada campo de entrada de texto, adicione um elemento `<span>` com a classe "focus-input-form" e o atributo data-placeholder definido como o nome do campo ("E-mail" para o campo de email).
+- Um botão com a classe "login-form-btn" e o texto "Redefinir senha".
+- Uma imagem com o atributo src definido como "images/s_icon.jpg", a largura definida como 300 e a altura definida como 300, e a classe "margin-left-50".
+- Um arquivo CSS externo com o caminho "css/main.css" deve ser vinculado ao documento HTML.
+- Um script JavaScript que selecione todos os elementos com a classe "input-form" e adicione um ouvinte de evento "blur" a cada um deles. O ouvinte de evento deve verificar se o valor do campo está vazio. Se estiver vazio, ele deve remover a classe "has-val" do campo; caso contrário, deve adicionar a classe "has-val" ao campo. E ao pressionar o botão a página, caso o campo "E-mail" não esteja vazios carregar uma janela pop-up com a mensagem "O link para redefinição foi enviado para o endereço informado" e após clicar para fechar a janela a página será redirecionada para o link "login.html".

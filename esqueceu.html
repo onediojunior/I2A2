@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Esqueceu a sua senha</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <style>
+		.has-val .focus-input-form::before {
+			content: attr(data-placeholder);
+			transform: translate(0, -100%);
+			opacity: 1;
+		}
+  </style>
+</head>
+<body>
+<div class="container">
+		<div class="container-login">
+			<div class="wrap-login">
+  <form class="login-form">
+    <h2 class="login-form-title">Esqueceu a sua senha</h2>
+    <div class="wrap-input margin-top-35 margin-bottom-35">
+						<input class="input-form" type="text" name="email" autocomplete="off">
+						<span class="focus-input-form" data-placeholder="E-mail"></span>
+					</div>
+    <button class="login-form-btn" type="button" onclick="resetPassword()">Redefinir senha</button>
+  </form>
+<div>
+<div>
+<div>
+<script>
+    function resetPassword() {
+      var emailInput = document.querySelector('.input-form');
+      if (emailInput.value !== '') {
+        alert('O link para redefinição foi enviado para o endereço informado');
+        window.location.href = 'login.html';
+      }
+    }
+
+    var inputElements = document.querySelectorAll('.input-form');
+    inputElements.forEach(function(element) {
+      element.addEventListener('blur', function() {
+        if (element.value === '') {
+          element.classList.remove('has-val');
+        } else {
+          element.classList.add('has-val');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
